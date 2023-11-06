@@ -59,7 +59,7 @@ let classRoom = {
 };
 
 function getGrades() {
-    let grades = classRoom.students.map(student => student.gradeNumber); // maps classRoom to get all the grades.
+    let grades = classRoom.students.map(student => student.gradeNumber); // maps classRoom(only students array) to get all the grades.
     console.log('Grades:', grades); // Print the array to console.
 
     let total = grades.reduce((sum, grade) => sum + grade, 0); // Takes all the grades from the variabel and then we sum it up.
